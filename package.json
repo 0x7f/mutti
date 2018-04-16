@@ -1,0 +1,41 @@
+{
+  "name": "mutti",
+  "version": "0.1.11",
+  "description": "Mother of multicloud tooling",
+  "main": "dist/index.js",
+  "bin": {
+    "mutti": "dist/cli.js"
+  },
+  "scripts": {
+    "build": "babel src --out-dir dist",
+    "lint": "eslint ./src"
+  },
+  "author": "Christoph Bastuck",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/echtzeitstudios/mutti"
+  },
+  "dependencies": {
+    "@google-cloud/compute": "^0.10.0",
+    "argparse": "^1.0.9",
+    "aws-sdk": "^2.213.1",
+    "babel-polyfill": "^6.26.0",
+    "bunyan": "^1.8.12",
+    "dockerode": "^2.5.4",
+    "node-fetch": "^2.1.2",
+    "uuid": "^3.2.1"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "eslint": "^4.19.1",
+    "eslint-config-standard": "^11.0.0",
+    "eslint-plugin-import": "^2.11.0",
+    "eslint-plugin-node": "^6.0.1",
+    "eslint-plugin-promise": "^3.7.0",
+    "eslint-plugin-standard": "^3.0.1"
+  }
+}
